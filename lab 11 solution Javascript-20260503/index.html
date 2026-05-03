@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Information</title>
+      <link rel="stylesheet" href="mySheet.css">
+      <script src="scripts.js"></script>
+
+</head>
+
+<body>
+
+      <img id="logo" src="logo.jpg" alt="YU Logo">
+      <h1>Student Information</h1>
+      <button onclick="displayStudents(students)">ALL Students</button>
+      <button onclick="filterStudents('SE')">SE Students</button>
+      <button onclick="filterStudents('NES')">NES Students</button>
+
+      <table id="studentTable">
+          <thead>
+              <tr>
+                  <th>Student ID</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Major</th>
+              </tr>
+          </thead>
+
+        <tbody>
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+
+      </table>
+
+      <script>
+        //Display all students on page load
+        displayStudents(students); 
+      </script>
+
+</body>
+
+</html> 
